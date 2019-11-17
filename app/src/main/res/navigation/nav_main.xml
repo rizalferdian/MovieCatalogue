@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/movieFragment">
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.rizalferdian.moviecatalogue.movie.MovieFragment"
+        android:label="MovieFragment"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/tvShowFragment"
+        android:name="com.rizalferdian.moviecatalogue.tv.TvShowFragment"
+        android:label="TvShowFragment"
+        tools:layout="@layout/fragment_tv_show" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.rizalferdian.moviecatalogue.favorite.FavoriteFragment"
+        android:label="FavoriteFragment"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>

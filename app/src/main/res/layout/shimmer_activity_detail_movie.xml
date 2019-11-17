@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".movie.detail.DetailMovieActivity">
+
+        <View
+            android:id="@+id/text_title"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/img_poster"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintDimensionRatio="2:3"
+            app:layout_constraintEnd_toStartOf="@id/space_middle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_title" />
+
+        <Space
+            android:id="@+id/space_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/label_vote"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/vote_average"
+            app:layout_constraintStart_toEndOf="@id/space_middle"
+            app:layout_constraintTop_toTopOf="@id/img_poster" />
+
+        <View
+            android:id="@+id/text_vote"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/label_vote" />
+
+        <View
+            android:id="@+id/label_vote_count"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/text_vote" />
+
+        <View
+            android:id="@+id/text_vote_count"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/label_vote_count" />
+
+        <View
+            android:id="@+id/label_revenue"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/text_vote_count" />
+
+        <View
+            android:id="@+id/text_revenue"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/label_revenue" />
+
+        <View
+            android:id="@+id/label_budget"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/text_revenue" />
+
+        <View
+            android:id="@+id/text_budget"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/label_budget" />
+
+        <View
+            android:id="@+id/label_release_date"
+            android:layout_width="100dp"
+            android:layout_height="14dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/text_budget" />
+
+        <View
+            android:id="@+id/text_release_date"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="@id/label_vote"
+            app:layout_constraintTop_toBottomOf="@id/label_release_date" />
+
+        <View
+            android:id="@+id/label_genre"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_poster" />
+
+        <View
+            android:id="@+id/chip_one"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_genre" />
+
+        <View
+            android:id="@+id/chip_two"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toEndOf="@id/chip_one"
+            app:layout_constraintTop_toTopOf="@id/chip_one" />
+
+        <View
+            android:id="@+id/chip_three"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toEndOf="@id/chip_two"
+            app:layout_constraintTop_toTopOf="@id/chip_one" />
+
+        <View
+            android:id="@+id/chip_four"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintStart_toEndOf="@id/chip_three"
+            app:layout_constraintTop_toTopOf="@id/chip_one" />
+
+        <View
+            android:id="@+id/label_overview"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            android:text="@string/overview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/chip_one" />
+
+        <TextView
+            android:id="@+id/text_overview"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/label_overview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
